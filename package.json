@@ -1,0 +1,24 @@
+{
+	"name": "serverless-codecommit-slack",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"start": "sls deploy -v"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://git-codecommit.ap-south-1.amazonaws.com/v1/repos/serverless_juleb.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"homepage": "https://git-codecommit.ap-south-1.amazonaws.com/v1/repos/serverless_juleb#readme",
+	"devDependencies": {
+		"serverless-plugin-typescript": "^1.1.7",
+		"typescript": "^3.5.2",
+		"aws-sdk": "^2.479.0"
+	},
+	"dependencies": {
+		"axios": "^0.19.0"
+	}
+}

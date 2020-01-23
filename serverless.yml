@@ -1,0 +1,34 @@
+service: codepush
+
+package:
+  exclude:
+    - node_modules/**
+    - '!node_modules/axios/**'
+    - '!node_modules/is-buffer/**'
+    - '!node_modules/follow-redirects/**'
+  # include:
+  #   - node_modules/axios
+
+plugins:
+  - serverless-plugin-typescript
+
+provider:
+  name: aws
+  runtime: nodejs10.x
+  region: us-east
+  stage: prod
+
+  environment:
+    WEBHOOK_URL: "Your Slack webhook here"
+    REGION: ${self:provider.region}
+
+  iamRoleStatements:
+   - Effect: Allow
+     Action:
+      - codecommit:GetCommit
+     Resource: "*"
+
+
+functions:
+  codePush:
+    handler: src/codePush.handler
