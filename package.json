@@ -8,11 +8,11 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://git-codecommit.ap-south-1.amazonaws.com/v1/repos/serverless_juleb.git"
+		"url": "git+https://github.com/hussaino/serverless-codecommit-slack.git"
 	},
 	"author": "",
 	"license": "ISC",
-	"homepage": "https://git-codecommit.ap-south-1.amazonaws.com/v1/repos/serverless_juleb#readme",
+	"homepage": "https://github.com/hussaino/serverless-codecommit-slack#readme",
 	"devDependencies": {
 		"serverless-plugin-typescript": "^1.1.7",
 		"typescript": "^3.5.2",
