@@ -31,7 +31,7 @@ interface CodeCommitTriggerEvent {
 }
 
 const codecommit = new aws.CodeCommit({
-	region: 'ap-south-1',
+	region: process.env.REGION || 'us-east-1',
 });
 export const handler = async (event: CodeCommitTriggerEvent) => {
 	console.log(event);
