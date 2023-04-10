@@ -16,7 +16,7 @@
 	"devDependencies": {
 		"serverless-plugin-typescript": "^1.1.7",
 		"typescript": "^3.5.2",
-		"aws-sdk": "^2.814.0"
+		"aws-sdk": "^2.1354.0"
 	},
 	"dependencies": {
 		"axios": "^0.21.2"
